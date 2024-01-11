@@ -1,6 +1,6 @@
 [package]
 name = "libarchive_src"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "Source and raw bindings of libarchive. High level bindings are available in crate `akv`."
@@ -8,11 +8,11 @@ homepage = "https://github.com/patr0nus/akv"
 repository = "https://github.com/patr0nus/akv"
 
 [dependencies]
-libc = "0.2.137"
+libc = "0.2"
 lzma-sys = { version = "0.1.20", features = ["static"] }
 bzip2-sys = { version = "0.1.11", features = [ "static" ] }
-libz-sys = { version = "1.1.8", features = ["static"] }
-zstd-sys = "2.0.4"
+libz-sys = { version = "1.1", features = ["static"] }
+zstd-sys = "2.0"
 lz4-sys = "1.9.4"
 
 
@@ -20,9 +20,9 @@ lz4-sys = "1.9.4"
 # https://github.com/libarchive/libarchive/blob/v3.6.2/CMakeLists.txt#L809
 # https://github.com/libarchive/libarchive/blob/v3.6.2/libarchive/archive_hmac_private.h#L46
 [target.'cfg(not(target_vendor = "apple"))'.dependencies]
-openssl-sys = { version = "0.9.80", features = ["vendored"] }
+openssl-sys = { version = "0.9", features = ["vendored"] }
 
 [build-dependencies]
-bindgen = "0.63.0"
-cmake = "0.1.49"
+bindgen = "0.69"
+cmake = "0.1"
 path-slash = "0.2.1"

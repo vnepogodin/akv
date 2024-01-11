@@ -1,6 +1,6 @@
 [package]
 name = "akv"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 rust-version = "1.65"
 license = "MIT OR Apache-2.0"
@@ -9,9 +9,9 @@ homepage = "https://github.com/patr0nus/akv"
 repository = "https://github.com/patr0nus/akv"
 
 [dependencies]
-libarchive_src = { version = "0.1", path = "libarchive_src" }
-libc = "0.2.137"
-always-assert = "0.1.2"
+libarchive_src = { version = "0.1.1", path = "libarchive_src" }
+libc = "0.2"
+always-assert = "0.1"
 
 [workspace]
 members = ["libarchive_src"]

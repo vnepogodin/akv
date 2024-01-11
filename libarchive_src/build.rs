@@ -39,6 +39,7 @@ fn main() {
         .define("ENABLE_EXPAT", "OFF")
         .define("ENABLE_LIBGCC", "OFF")
         .define("ENABLE_LIBB2", "OFF")
+        .define("ENABLE_ACL", "OFF")
         .define("ENABLE_TEST", "OFF");
 
     if env::var("DEP_OPENSSL_VERSION").is_ok() {
