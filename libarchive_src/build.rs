@@ -109,7 +109,7 @@ fn main() {
     println!("cargo:rerun-if-changed=wrapper.h");
     let bindgen_builder = bindgen::builder()
         .header("wrapper.h")
-        .parse_callbacks(Box::new(bindgen::CargoCallbacks))
+        .parse_callbacks(Box::new(bindgen::CargoCallbacks::new()))
         .allowlist_function("archive_.*")
         .allowlist_var("ARCHIVE_.*")
         .blocklist_type("FILE")
