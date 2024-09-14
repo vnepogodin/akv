@@ -23,6 +23,6 @@ lz4-sys = "1.9.4"
 openssl-sys = { version = "0.9", features = ["vendored"] }
 
 [build-dependencies]
-bindgen = "0.69"
+bindgen = "0.70"
 cmake = "0.1"
 path-slash = "0.2.1"
