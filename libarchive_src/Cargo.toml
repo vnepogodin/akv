@@ -1,6 +1,6 @@
 [package]
 name = "libarchive_src"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "Source and raw bindings of libarchive. High level bindings are available in crate `akv`."
@@ -23,6 +23,6 @@ lz4-sys = "1.9.4"
 openssl-sys = { version = "0.9", features = ["vendored"] }
 
 [build-dependencies]
-bindgen = "0.70"
+bindgen = "0.71"
 cmake = "0.1"
 path-slash = "0.2.1"
