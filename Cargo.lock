@@ -13,7 +13,7 @@ dependencies = [
 
 [[package]]
 name = "akv"
-version = "0.1.5"
+version = "0.1.6"
 dependencies = [
  "always-assert",
  "libarchive_src",
